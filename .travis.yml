@@ -8,6 +8,10 @@ cache: pip
 notifications:
   email: false
 
+branches:
+  only:
+    - master
+
 install:
   - python -m pip install nox
 

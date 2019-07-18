@@ -1,4 +1,9 @@
+import os
+import sys
 import datetime
+
+sys.path.insert(0, os.path.abspath("_ext"))
+
 
 # -- Project information -----------------------------------------------------
 
@@ -15,7 +20,7 @@ source_suffix = ".rst"
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named "sphinx.ext.*") or your custom
 # ones.
-extensions = []
+extensions = ["edit_on_github"]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -26,6 +31,9 @@ templates_path = ["_templates"]
 exclude_patterns = []
 
 pygments_style = "sphinx"
+
+edit_on_github_project = "python-http/python-http.org"
+edit_on_github_branch = "master"
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -40,4 +48,4 @@ html_theme_options = {
     "font_family": "'Roboto', Georgia, sans-serif",
     "head_font_family": "'Fira Sans', sans-serif",
 }
-html_sidebars = {"**": ["about.html", "navigation.html"]}
+html_sidebars = {"**": ["about.html", "navigation.html", "sourcelink.html"]}

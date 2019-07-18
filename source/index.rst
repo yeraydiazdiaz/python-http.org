@@ -64,6 +64,6 @@ The Python HTTP Working Group should endeavor to accomplish the following things
 Membership
 ----------
 
-See the GitHub organization for a `list of all members`_.
+See the GitHub organization for a `list of all public members`_.
 
- .. _list of all members: https://github.com/orgs/python-http/people
+ .. _list of all public members: https://github.com/orgs/python-http/people

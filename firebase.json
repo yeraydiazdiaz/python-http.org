@@ -11,7 +11,9 @@
       "venv/**",
       ".gitignore",
       ".travis.yml",
-      "build.sh"
+      "build.sh",
+      ".buildinfo",
+      "build/html/.doctrees/**"
     ]
   }
 }

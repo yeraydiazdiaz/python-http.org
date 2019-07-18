@@ -3,3 +3,5 @@ firebase-debug.log
 venv/
 .firebase/
 .nox/
+.py[co]
+__pycache__/
