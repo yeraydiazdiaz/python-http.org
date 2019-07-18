@@ -1,6 +1,9 @@
 python-http.org
 ===============
 
+ .. image:: https://img.shields.io/travis/python-http/python-http.org/master.svg
+    :target: https://travis-ci.org/python-http/python-http.org
+
 This repository is the source code for the website found at https://python-http.org.
 All changes are automatically deployed to cloud hosting.
 
