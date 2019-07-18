@@ -2,7 +2,16 @@ language: python
 python: 3.7
 
 install:
-  - python -m pip install -r requirements.txt
+  - python -m pip install nox
 
 script:
-  - ./build.sh
+  - nox -s build
+
+deploy:
+  provider: firebase
+  skip_cleanup: true
+  token:
+    secure: E3GzPMhrWdc8uVUbMimZaKpiZPTeBKeX7yPrFv7vy/vPRkenO3MH5uKJDyufyh9aCNhFQCW+1EdZ9zzEyQ3RNVc6w4fa3P94cVYpFOYpJi0lNqRBuRxFIe55Xk6TiLsL7OMn1Lq2BMpAUaLCOSBN5HgaaAZyloo+dLoM6MCgTw+VGJPYC41wdo9D8FVIVj+2P/mM51kYZ/101r6APorzuhsCZTtC5TTtpQLLtg5Ac/bSO5fLMlHk85+gDB/jtsfSXF/MmFAWYzM5ij4HYRf8eUSRS2KXJgsYF6lkyY7VCiIgxOE66ZmIANKWz4PljS4K1+XummAgASaXlKExtMQ7+QFqXM/cxV6WXBvjWdgkpXB36ty9AjmqeEWI3sEQOGFxxBqYRnKASPnT8wRuKFzohe08ITynkD9moWt2dRYTxbx0xjxDs3x062airN8H3OZDb91kv50boZNFXvLTjLHCdl72ON74WBuiVti+9eX2vSOC1UufIYwQEwYuaBMgHR7uJUG8XM3NGvf9MgOQZ7pb14bV59guwCq+jO3cI7au3fV9G0JIfrSzR4Z9If34LCYm+7qVfj86AIVgoVqPHWENJ04skokicmP1mS+G46qjPq94PtAh7MDtOehlyRWCyug9dXAhxa42R83gcbybeZTAQvj0kZL/TqUjmN3E+KcmhAU=
+  on:
+    branch: master
+    repo: python-http/python-http.org

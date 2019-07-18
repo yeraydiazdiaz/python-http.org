@@ -40,9 +40,4 @@ html_theme_options = {
     "font_family": "'Roboto', Georgia, sans-serif",
     "head_font_family": "'Fira Sans', sans-serif",
 }
-html_sidebars = {
-    "**": [
-        "about.html",
-        "navigation.html",
-    ]
-}
+html_sidebars = {"**": ["about.html", "navigation.html"]}
