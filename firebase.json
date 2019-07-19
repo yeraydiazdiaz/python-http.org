@@ -5,15 +5,15 @@
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**",
+      "node_modules/**/*",
       "requirements.txt",
-      "source/**",
-      "venv/**",
+      "source/**/*",
+      "venv/**/*",
       ".gitignore",
       ".travis.yml",
       "build.sh",
       ".buildinfo",
-      "build/html/.doctrees/**"
+      "build/html/.doctrees/**/*"
     ]
   }
 }
