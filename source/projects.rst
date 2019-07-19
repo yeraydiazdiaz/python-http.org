@@ -46,11 +46,11 @@ the Python HTTP ecosystem. Their development is crucial to the
 future of Python's HTTP stack.
 
 - `aioquic`_
-- `http3`_ ★
+- `httpx`_ ★
 - `hyper-h2`_
 - `h11`_
 
  .. _aioquic: https://github.com/aiortc/aioquic
- .. _http3: https://github.com/encode/http3
+ .. _httpx: https://github.com/encode/httpx
  .. _hyper-h2: https://github.com/python-hyper/hyper-h2
  .. _h11: https://github.com/python-hyper/h11
