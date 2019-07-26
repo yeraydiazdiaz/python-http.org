@@ -16,7 +16,6 @@ In order to be a member project of the Python HTTP Working Group a project must:
 - Maintain a clear path towards additional members of the Working Group to gain commit access to the project.
 - Either have its own code of conduct or adopt the Working Group's code of conduct.
 - Either have its own security contact or use the Working Groups' security contact.
-- Be voted in by a 50% majority of Working Group members.
 
 
 Critical Projects

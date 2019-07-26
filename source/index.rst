@@ -4,6 +4,7 @@
 
    self
    projects
+   contributing
    code-of-conduct
    security
 
@@ -59,11 +60,3 @@ The Python HTTP Working Group should endeavor to accomplish the following things
     This includes helping people outside the Working Group author and review PEPs.
 
  .. _sans-I/O: https://sans-io.readthedocs.io/
-
-
-Membership
-----------
-
-See the GitHub organization for a `list of all public members`_.
-
- .. _list of all public members: https://github.com/orgs/python-http/people

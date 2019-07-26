@@ -16,7 +16,7 @@ install:
   - python -m pip install nox
 
 script:
-  - nox -s build
+  - nox -s check build
 
 deploy:
   provider: firebase

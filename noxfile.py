@@ -3,18 +3,30 @@ import os
 import nox
 
 
+source_files = ("source/", "noxfile.py")
+
+
 @nox.session(reuse_venv=True)
 def lint(session):
     session.install("black")
 
-    session.run("black", "noxfile.py", "source/conf.py", "source/_ext/")
+    session.run("black", *source_files)
+
+    check(session)
+
+
+@nox.session(reuse_venv=True)
+def check(session):
+    session.install("black")
+
+    session.run("black", "--check", *source_files)
 
 
 @nox.session(reuse_venv=True)
 def build(session):
     session.install("sphinx", "htmlmin")
 
-    session.run("rm", "-rf", "build/html/")
+    session.run("rm", "-rf", "build/html/", external=True)
     session.run(
         "sphinx-build", "-W", "-n", "-a", "-b", "html", "source/", "build/html/"
     )
