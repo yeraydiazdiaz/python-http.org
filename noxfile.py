@@ -24,7 +24,7 @@ def check(session):
 
 @nox.session(reuse_venv=True)
 def build(session):
-    session.install("sphinx", "htmlmin")
+    session.install("-rrequirements.txt")
 
     session.run("rm", "-rf", "build/html/", external=True)
     session.run(
