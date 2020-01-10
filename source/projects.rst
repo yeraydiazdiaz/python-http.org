@@ -48,6 +48,7 @@ future of Python's HTTP stack.
 - `httpx`_ ★
 - `hyper-h2`_
 - `h11`_
+- `socksio`_
 
  .. _aioquic: https://github.com/aiortc/aioquic
  .. _httpx: https://github.com/encode/httpx
