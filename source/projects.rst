@@ -53,3 +53,4 @@ future of Python's HTTP stack.
  .. _httpx: https://github.com/encode/httpx
  .. _hyper-h2: https://github.com/python-hyper/hyper-h2
  .. _h11: https://github.com/python-hyper/h11
+ .. _socksio: https://github.com/sethmlarson/socksio
